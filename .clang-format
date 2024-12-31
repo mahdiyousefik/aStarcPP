@@ -1,0 +1,38 @@
+# Based on LLVM style, with custom adjustments.
+BasedOnStyle: LLVM
+
+# General formatting preferences
+IndentWidth: 4                 # Set indentation width to 4 spaces
+TabWidth: 4                    # Set tab width to 4 spaces
+UseTab: Never                  # Never use tabs, always use spaces
+
+# Braces & parentheses
+BreakBeforeBraces: Allman      # Braces on a new line (Allman style)
+SpaceBeforeParens: ControlStatements # Space before parentheses in control statements (if, for, etc.)
+SpacesInParentheses: true     # Add spaces inside parentheses (e.g., function ( arg ))
+SpaceAfterControlStatementKeyword: true # Space after control statement keywords (if, while, etc.)
+
+# Line length and wrapping
+ColumnLimit: 120               # Maximum line length of 120 characters
+AlignAfterOpenBracket: Align  # Align function parameters after opening bracket
+MaxEmptyLinesToKeep: 1        # Keep only 1 empty line between functions or sections
+
+# Include directive formatting
+SortIncludes: false            # Do not sort #include directives
+
+# Function and variable declaration formatting
+AllowShortFunctionsOnASingleLine: None  # No short functions on a single line
+PointerAlignment: Left         # Align pointers on the left side (e.g., int* ptr)
+
+# Miscellaneous
+NamespaceIndentation: Inner    # Indent the content of namespaces (inner content indented)
+AlignConsecutiveAssignments: true  # Align consecutive assignments for readability
+
+# Additional spacing tweaks
+AllowShortIfStatementsOnASingleLine: false # Disallow short if statements on a single line
+
+# Comment formatting
+AlignTrailingComments: true  # Align trailing comments to the right
+
+# Constructor initializer formatting
+ConstructorInitializerIndentWidth: 4  # Indentation of constructor initializer list
